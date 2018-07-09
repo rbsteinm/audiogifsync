@@ -1,3 +1,5 @@
+# Audiogifsync
+
 ## Description
 
 This small program allows you to generate a video file by combining an audio file and a gif file. The gif will loop until the song is finished, and its frequency will be synchronized with the BPM of the song (if specified).
