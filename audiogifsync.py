@@ -18,6 +18,7 @@ if bpm is not None:
 else:
     mygif2 = mygif
 
+#mygif2 = mygif2.fx(vfx.make_loopable, cross=0.1)
 mygif3 = mygif2.fx(vfx.loop, duration =audio.duration) # loop the gif for the song's duration
 mygif4 = mygif3.set_audio(audio) # add the audio to the video
-mygif4.write_videofile("result.mp4") # export the resulting video as mp4
+mygif4.write_videofile("result.mp4", codec='mpeg4',fps=30,bitrate='3500k', audio_codec='aac', audio_bitrate='320k') # export the resulting video as mp4
